@@ -1,9 +1,18 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Facebook, Twitter, Linkedin, Github, Mail, Phone, MapPin, ArrowRight } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Github,
+  Mail,
+  Phone,
+  MapPin,
+  ArrowRight,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -14,24 +23,42 @@ export default function Footer() {
           {/* Company info */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold text-primary mb-2">TechRecruit</h3>
+              <h3 className="text-2xl font-bold text-primary mb-2">
+                TechRecruit
+              </h3>
               <p className="text-muted-foreground leading-relaxed">
-                La plateforme de recrutement nouvelle génération qui connecte les talents tech avec les opportunités
-                d'avenir.
+                La plateforme de recrutement nouvelle génération qui connecte
+                les talents tech avec les opportunités d'avenir.
               </p>
             </div>
 
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="hover:bg-primary/10 hover:text-primary"
+              >
                 <Facebook className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="hover:bg-primary/10 hover:text-primary"
+              >
                 <Twitter className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="hover:bg-primary/10 hover:text-primary"
+              >
                 <Linkedin className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-primary/10 hover:text-primary">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="hover:bg-primary/10 hover:text-primary"
+              >
                 <Github className="h-5 w-5" />
               </Button>
             </div>
@@ -39,7 +66,9 @@ export default function Footer() {
 
           {/* Services */}
           <div className="space-y-6">
-            <h4 className="text-lg font-semibold text-card-foreground">Services</h4>
+            <h4 className="text-lg font-semibold text-card-foreground">
+              Services
+            </h4>
             <nav className="space-y-3">
               <Link
                 href="/developpeurs"
@@ -70,7 +99,9 @@ export default function Footer() {
 
           {/* Resources */}
           <div className="space-y-6">
-            <h4 className="text-lg font-semibold text-card-foreground">Ressources</h4>
+            <h4 className="text-lg font-semibold text-card-foreground">
+              Ressources
+            </h4>
             <nav className="space-y-3">
               <Link
                 href="/competences"
@@ -101,9 +132,12 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div className="space-y-6">
-            <h4 className="text-lg font-semibold text-card-foreground">Newsletter</h4>
+            <h4 className="text-lg font-semibold text-card-foreground">
+              Newsletter
+            </h4>
             <p className="text-muted-foreground text-sm">
-              Recevez les dernières opportunités et actualités tech directement dans votre boîte mail.
+              Recevez les dernières opportunités et actualités tech directement
+              dans votre boîte mail.
             </p>
 
             <div className="space-y-3">
@@ -118,7 +152,8 @@ export default function Footer() {
                 </Button>
               </div>
               <p className="text-xs text-muted-foreground">
-                En vous abonnant, vous acceptez notre politique de confidentialité.
+                En vous abonnant, vous acceptez notre politique de
+                confidentialité.
               </p>
             </div>
           </div>
@@ -133,7 +168,9 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Email</p>
-                <p className="font-medium text-card-foreground">contact@techrecruit.fr</p>
+                <p className="font-medium text-card-foreground">
+                  contact@techrecruit.fr
+                </p>
               </div>
             </div>
 
@@ -143,7 +180,9 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Téléphone</p>
-                <p className="font-medium text-card-foreground">+33 1 23 45 67 89</p>
+                <p className="font-medium text-card-foreground">
+                  +212 6 79 01 34 59
+                </p>
               </div>
             </div>
 
@@ -153,7 +192,9 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Adresse</p>
-                <p className="font-medium text-card-foreground">Paris, France</p>
+                <p className="font-medium text-card-foreground">
+                  Casablanca, Maroc
+                </p>
               </div>
             </div>
           </div>
@@ -161,21 +202,32 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="py-6 border-t border-border/20 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">© 2024 TechRecruit. Tous droits réservés.</p>
+          <p className="text-sm text-muted-foreground">
+            © 2025 TechRecruit. Tous droits réservés.
+          </p>
 
           <div className="flex gap-6 text-sm">
-            <Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors duration-200">
+            <Link
+              href="/privacy"
+              className="text-muted-foreground hover:text-primary transition-colors duration-200"
+            >
               Politique de confidentialité
             </Link>
-            <Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors duration-200">
+            <Link
+              href="/terms"
+              className="text-muted-foreground hover:text-primary transition-colors duration-200"
+            >
               Conditions d'utilisation
             </Link>
-            <Link href="/cookies" className="text-muted-foreground hover:text-primary transition-colors duration-200">
+            <Link
+              href="/cookies"
+              className="text-muted-foreground hover:text-primary transition-colors duration-200"
+            >
               Cookies
             </Link>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

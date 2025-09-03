@@ -1,9 +1,15 @@
-"use client"
+"use client";
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, TrendingUp, Search, Users, BookOpen } from "lucide-react"
-import Link from "next/link"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, TrendingUp, Search, Users, BookOpen } from "lucide-react";
+import Link from "next/link";
 
 export default function FeatureCards() {
   const features = [
@@ -43,23 +49,27 @@ export default function FeatureCards() {
       color: "from-orange-500 to-red-500",
       delay: "300ms",
     },
-  ]
+  ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section
+      className="py-20 px-4 sm:px-6 lg:px-8"
+      style={{ backgroundColor: "#1A1A1A" }}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
             Votre Parcours <span className="text-primary">Professionnel</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Des outils et ressources conçus pour accélérer votre carrière dans la tech
+          <p className="text-xl text-white max-w-3xl mx-auto text-pretty">
+            Des outils et ressources conçus pour accélérer votre carrière dans
+            la tech
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => {
-            const Icon = feature.icon
+            const Icon = feature.icon;
             return (
               <div
                 key={index}
@@ -105,7 +115,7 @@ export default function FeatureCards() {
                   <div className="absolute bottom-4 left-4 w-1 h-1 bg-primary/30 rounded-full group-hover:bg-primary/60 transition-colors duration-300"></div>
                 </Card>
               </div>
-            )
+            );
           })}
         </div>
       </div>
@@ -123,5 +133,5 @@ export default function FeatureCards() {
         }
       `}</style>
     </section>
-  )
+  );
 }

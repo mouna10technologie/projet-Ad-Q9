@@ -1,7 +1,13 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Code, Users, FileText, Bot } from "lucide-react"
-import Link from "next/link"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Code, Users, FileText, Bot } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceCards() {
   const services = [
@@ -37,7 +43,7 @@ export default function ServiceCards() {
       href: "/ia",
       gradient: "from-orange-500/20 to-red-500/20",
     },
-  ]
+  ];
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8">
@@ -46,14 +52,15 @@ export default function ServiceCards() {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
             Nos <span className="text-primary">Services</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Une plateforme complète qui connecte les talents tech avec les opportunités les plus innovantes
+          <p className="text-xl text-white max-w-3xl mx-auto text-pretty">
+            Une plateforme complète qui connecte les talents tech avec les
+            opportunités les plus innovantes
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
-            const Icon = service.icon
+            const Icon = service.icon;
             return (
               <Card
                 key={index}
@@ -85,10 +92,10 @@ export default function ServiceCards() {
                   </Link>
                 </CardContent>
               </Card>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
+  );
 }
